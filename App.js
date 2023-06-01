@@ -9,11 +9,11 @@ import {
   ScrollView,
   Picker,
 } from "react-native";
-import ImagePicker from "./ImagePicker";
-import ImageUpload from "./ImageUpload";
+import ImagePicker from "./component/ImagePicker";
+import ImageUpload from "./component/ImageUpload";
 import { useState } from "react";
-import HomePage from "./HomePage";
-import ResultPage from "./ResultPage";
+import HomePage from "./component/HomePage";
+import ResultPage from "./component/ResultPage";
 import React from "react";
 import { createAppContainer } from "react-navigation";
 import SplashScreen from 'react-native-splash-screen';
