@@ -1,6 +1,5 @@
-import { View, Button, Alert, Image, Text } from "react-native";
+import { View, Button, Alert } from "react-native";
 import { launchCameraAsync, useCameraPermissions, PermissionStatus } from "expo-image-picker";
-import { useState } from "react";
 
 
 function ImagePicker({ text, onImageTaken }) {
@@ -36,13 +35,11 @@ function ImagePicker({ text, onImageTaken }) {
       outputFormat: "PNG",
     });
 
-    console.log(image);
     onImageTaken(image);
 
 
 
   } return (<View>
-
     <Button title={text} onPress={takeImageHandler} />
   </View>);
 
