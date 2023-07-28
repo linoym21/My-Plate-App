@@ -10,19 +10,7 @@ import BottomDrawer from "./BottomDrawer";
 
 function ResultPage({ data }) {
     const route = useRoute();
-    const { image } = route.params.image;
 
-    // We need to get the height of the phone and use it relatively, 
-    // This is because height of phones vary
-    const windowHeight = Dimensions.get('window').height;
-
-    // This state would determine if the drawer sheet is visible or not
-    const [isBottomSheetOpen, setIsBottomSheetOpen] = useState(false);
-
-    // Function to open the bottom sheet 
-    const handleOpenBottomSheet = () => {
-        setIsBottomSheetOpen(true);
-    };
     return <View>
         <View>
             <Image source={{ uri: route.params.image.assets[0].uri }} style={styles.image} />

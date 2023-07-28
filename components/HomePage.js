@@ -26,7 +26,6 @@ function HomePage({ navigation }) {
                 passImages();
             }
         } catch (error) {
-            console.log("error in take image");
             Alert.alert("YOU NEED 2 PHOTO!",)
         }
 
@@ -60,9 +59,8 @@ function HomePage({ navigation }) {
         formData.append('imageTop', { uri: selectedImageTop.assets[0].uri, name: 'image.png', type: 'image/png' });
         try {
             const response = await axios.post("https://3be0-46-210-46-131.ngrok-free.app/process_images", formData)
-            const jsonData = JSON.stringify(response.data);
-            const dataDemo = response.data;
-            setData(dataDemo);
+            const jsonData = response.data;
+            setData(jsonData);
         } catch (error) {
             console.log("cant send images")
         }
