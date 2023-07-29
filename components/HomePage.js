@@ -68,6 +68,7 @@ function HomePage({ navigation }) {
     function navigateToResultPage() {
         if (selectedImageSide !== null && selectedImageTop !== null) {
             navigation.navigate("My Plate", { image: selectedImageTop }, { data: data });
+
         } else {
             Alert.alert("YOU NEED 2 PHOTO!",)
         }

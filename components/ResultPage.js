@@ -20,6 +20,9 @@ function ResultPage({ data }) {
             if (data[1]!==null){
                 <BottomDrawer foodName={data[1].name} Calories={data[1].calories} weight={data[1].serving_size_g}
                     protein={data[1].protein_g} sugar={data[1].sugar_g} cholesterol={data[1].cholesterol_mg} />}
+            if (data[1]!==null && data[0]!==null){
+                <BottomDrawer foodName={"Total"} Calories={parseInt(data[1].calories) + parseInt(data[0].calories)} weight={parseInt(data[1].serving_size_g) + parseInt(data[0].serving_size_g)}
+                    protein={parseInt(data[1].protein_g) + parseInt(data[0].protein_g)} sugar={parseInt(data[1].sugar_g) + parseInt(data[0].sugar_g)} cholesterol={parseInt(data[1].cholesterol_mg) + parseInt(data[0].cholesterol_mg)} />}
         </View>
     </View>
 }
