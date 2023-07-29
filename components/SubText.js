@@ -1,7 +1,7 @@
 import { Text } from "react-native";
 
 const SubText = ({ borderWidth, minWidth, paddingVertical, borderRadius, height, backgroundColor, borderColor, text, padding, size, color, family, letterSpacing, align = 'left', leading }) => {
-    console.log(text);
+
     return (
         <Text
             style={{

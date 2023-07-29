@@ -58,7 +58,7 @@ function HomePage({ navigation }) {
         formData.append('imageSide', { uri: selectedImageSide.assets[0].uri, name: 'image.png', type: 'image/png' });
         formData.append('imageTop', { uri: selectedImageTop.assets[0].uri, name: 'image.png', type: 'image/png' });
         try {
-            const response = await axios.post("https://3be0-46-210-46-131.ngrok-free.app/process_images", formData)
+            const response = await axios.post("https://5577-46-210-52-43.ngrok-free.app/process_images", formData)
             const jsonData = response.data;
             setData(jsonData);
         } catch (error) {

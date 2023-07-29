@@ -2,10 +2,8 @@ import {
     StyleSheet,
     Image,
     View,
-    Dimensions,
 } from "react-native";
 import { useRoute } from '@react-navigation/native';
-import { useState } from 'react';
 import BottomDrawer from "./BottomDrawer";
 
 function ResultPage({ data }) {
