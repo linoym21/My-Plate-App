@@ -23,45 +23,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    flexDirection: "row",
-    padding: "8%",
-    alignItems: "flex-start",
-    flex: 2,
-    height: 110,
-    justifyContent: "space-between",
-  },
-  stretch: {
-    width: 300,
-    height: 200,
-    resizeMode: "stretch",
-  },
-  upperContainer: {
-    padding: "32%",
-    alignItems: "center",
-    flex: 2,
-  },
-  textCon: {
-    fontSize: 40,
-    fontWeight: "bold",
-    color: "black",
-    width: 300,
-    paddingTop: 0,
-    fontFamily: "Cochin",
-    textAlign: "center",
-  },
   container: {
     flex: 1,
     height: "20%",
-  },
-  imageAction: {
-    width: 150,
-    height: 100,
-    resizeMode: "stretch",
-  },
-  comIm1: { paddingBottom: "20%" },
-  downLine: {
-    alignItems: "center",
-    paddingBottom: 50,
   },
 });
